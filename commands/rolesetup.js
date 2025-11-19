@@ -10,6 +10,8 @@ module.exports = {
   aliases: ['roles', 'setup'],
   description: 'Post the full self-assign role menu',
 
+  await interaction.deferReply();
+
   data: new SlashCommandBuilder()
     .setName('rolesetup')
     .setDescription('Post the full self-assign role menu'),
