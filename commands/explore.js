@@ -2,6 +2,8 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
+await interaction.deferReply();
+
 // Real Panfu locations
 const LOCATIONS = {
     beach: {
