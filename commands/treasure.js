@@ -2,8 +2,6 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
-await interaction.deferReply();
-
 // List of Panfu locations + fun clues
 const clues = [
   {
@@ -106,6 +104,8 @@ module.exports = {
         const { answer, riddle } = clues[Math.floor(Math.random() * clues.length)];
         const reward = Math.floor(Math.random() * 10) + 5; // 5–15 coins
 
+      await interaction.deferReply();
+      
         const embed = new EmbedBuilder()
             .setTitle("🏴‍☠️ Panfu Treasure Hunt!")
             .setColor(0xf1c40f)
