@@ -2,8 +2,6 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
-await interaction.deferReply();
-
 // Mystery scenarios with clues and solutions
 const mysteries = [
     {
@@ -73,6 +71,7 @@ module.exports = {
         ),
 
     async execute(message, args, client) {
+        await interaction.deferReply();
         const channelId = message.channel.id;
         const subcommand = args[0] || 'start';
 
