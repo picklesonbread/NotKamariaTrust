@@ -1,7 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
-await interaction.deferReply();
-
 // Wild conspiracy theories about Panfu lore
 const conspiracies = [
     {
@@ -99,6 +97,7 @@ module.exports = {
         .setDescription('Uncover wild conspiracy theories about Panfu island'),
 
     async execute(message, args, client) {
+       await interaction.deferReply();
         const theory = conspiracies[Math.floor(Math.random() * conspiracies.length)];
         const investigator = investigators[Math.floor(Math.random() * investigators.length)];
 
