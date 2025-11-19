@@ -6,7 +6,8 @@ This Privacy Policy explains what data NotKamariaTrust (“the Bot”) collects,
 
 1. Data the Bot Collects
 
-NotKamariaTrust only collects the minimum data required to operate its commands. This may include:
+NotKamariaTrust only collects the minimum data required to operate its commands.
+This may include:
 
 Temporarily Processed Data
 
@@ -14,13 +15,15 @@ Temporarily Processed Data
 
 Message content (only when commands are triggered)
 
-Usernames, IDs, and role info
+Usernames, IDs, and role information
 
 Channel or server metadata required for command execution
 
 Message history (only when a command specifically requires it)
 
 This data is processed in real time and is not saved to any external database.
+
+The Bot does not intentionally access or read Direct Messages.
 
 2. Long-Term Stored Data
 
@@ -34,11 +37,11 @@ Server logs
 
 IP addresses
 
-DMs
+Direct Messages
 
-Biometric or sensitive info
+Biometric or sensitive information
 
-If future features require saving data (leaderboards, settings, etc.), it will be opt-in and added to this policy.
+If future features require saving data (e.g., leaderboards, settings), it will be optional, announced, and added to this policy.
 
 3. Why Data Is Collected
 
@@ -48,13 +51,13 @@ Execute slash commands
 
 Manage roles when triggered by a command
 
-Allow features like quizzes, roasts, utilities, etc.
+Provide features such as quizzes, roasts, utilities, and entertainment commands
 
 Moderate or respond to messages
 
 Improve bot functionality and performance
 
-The Bot never sells or shares user data.
+The Bot never sells, shares, or transfers user data to third parties.
 
 4. Third-Party Sharing
 
@@ -63,26 +66,31 @@ The only external platform involved is Discord, which processes data according t
 
 5. Data Removal
 
-Since NotKamariaTrust does not store personal user data, there is nothing to delete.
+Since NotKamariaTrust does not store user data long-term, there is nothing to delete.
 
-If you want the bot removed from your server, simply:
+If you wish to remove the bot from your server:
 
 Kick the bot
 
-Remove its OAuth authorization
+Remove OAuth authorization
 
-Delete any roles created by the bot (optional)
+Delete any roles the bot created (optional)
 
 6. Children’s Privacy
 
-The Bot does not knowingly collect information from children younger than 13.
-Discord already restricts accounts under 13 from using the platform.
+The Bot does not knowingly collect information from children under 13.
+Discord already restricts accounts under 13 from accessing the platform.
 
-7. Changes to This Policy
+7. Compliance With Laws
 
-This Privacy Policy may update over time. Continued use of the Bot means you accept the updated policy.
+NotKamariaTrust is operated in accordance with applicable data protection regulations, including GDPR, CCPA, and other major privacy frameworks.
 
-8. Contact
+8. Changes to This Policy
+
+This Privacy Policy may update over time.
+Continued use of the Bot means you accept the revised policy.
+
+9. Contact
 
 For questions or concerns, contact:
-@picklesonbread
+@picklesonbread on Discord.
