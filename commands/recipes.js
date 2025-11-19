@@ -1,7 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, AttachmentBuilder } = require('discord.js');
 
-await interaction.deferReply();
-
 const RECIPES = {
     'apple-caramel-rolls': {
         name: 'Apple and Caramel Rolls',
@@ -284,6 +282,7 @@ module.exports = {
         ),
 
     async execute(interaction) {
+        await interaction.deferReply();
         const recipeChoice = interaction.options.getString('recipe');
         const recipe = RECIPES[recipeChoice];
 
