@@ -10,13 +10,12 @@ module.exports = {
   aliases: ['roles', 'setup'],
   description: 'Post the full self-assign role menu',
 
-  await interaction.deferReply();
-
   data: new SlashCommandBuilder()
     .setName('rolesetup')
     .setDescription('Post the full self-assign role menu'),
 
   async execute(interaction, args, client) {
+    await interaction.deferReply();
     // 1️⃣ WHO ARE U
     const whoMenu = new StringSelectMenuBuilder()
       .setCustomId('role_who')
