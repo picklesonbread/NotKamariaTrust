@@ -2,8 +2,6 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
-await interaction.deferReply();
-
 // Collectible stamps with different rarities
 const stamps = [
     { name: "Volcano Explorer", rarity: "Common", description: "Visited the volcano without getting roasted", emoji: "🌋" },
@@ -72,6 +70,8 @@ module.exports = {
         const userId = message.author.id;
         const subcommand = args[0] || 'collection';
 
+        await interaction.deferReply();
+        
         const userData = loadUserData();
         if (!userData[userId]) {
             userData[userId] = {
