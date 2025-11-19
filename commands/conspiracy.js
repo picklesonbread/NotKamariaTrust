@@ -1,5 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
+await interaction.deferReply();
+
 // Wild conspiracy theories about Panfu lore
 const conspiracies = [
     {
