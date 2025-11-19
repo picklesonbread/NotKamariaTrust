@@ -1,8 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 
-await interaction.deferReply();
-
 // Import database utilities
 const database = require('../utils/database');
 
@@ -151,6 +149,7 @@ module.exports = {
         ),
 
     async execute(message, args, client) {
+        await interaction.deferReply();
         const userId = message.author.id;
         const username = message.author.username;
         const subcommand = args[0] || 'status';
