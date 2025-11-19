@@ -10,6 +10,8 @@ module.exports = {
     async execute(message, args, client) {
         const userId = message.author.id;
         const userData = loadUserData();
+        
+await interaction.deferReply();
 
         // Initialize user data if doesn't exist
         if (!userData[userId]) {
