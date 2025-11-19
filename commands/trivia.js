@@ -2,6 +2,8 @@ const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, Butt
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
+await interaction.deferReply();
+
 const PANFU_QUESTIONS = [
     // HISTORY QUESTIONS
     {
