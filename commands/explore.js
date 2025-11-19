@@ -2,8 +2,6 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
-await interaction.deferReply();
-
 // Real Panfu locations
 const LOCATIONS = {
     beach: {
@@ -283,6 +281,7 @@ module.exports = {
         ),
 
     async execute(interaction) {
+       await interaction.deferReply();
         const userId = interaction.user.id;
         const username = interaction.user.username;
         const location = interaction.options.getString('location');
