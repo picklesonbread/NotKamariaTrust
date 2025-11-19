@@ -63,9 +63,10 @@ module.exports = {
 
     async showBalance(message, user) {
         const userId = message.author.id;
-        let userData = user;
+        let userData = null;
+        let usingFallback = false;
         
-        // Try to get data from database first
+        // Always try database first
         if (database && database.isInitialized()) {
             try {
                 const dbUser = await database.getUserProfile(userId, message.author.username);
@@ -73,19 +74,27 @@ module.exports = {
                     userData = dbUser;
                 }
             } catch (error) {
-                console.log('Failed to fetch user from database, using JSON:', error.message);
+                console.log('Failed to fetch user from database, using JSON fallback:', error.message);
+                usingFallback = true;
             }
+        } else {
+            usingFallback = true;
+        }
+        
+        // Only use JSON as last resort
+        if (!userData) {
+            userData = user || { coins: 0, level: 1 };
         }
         
         const embed = new EmbedBuilder()
             .setTitle('🪙 Panda Wallet')
-            .setColor('#ffd700')
+            .setColor(usingFallback ? '#e67e22' : '#ffd700')
             .setThumbnail(message.author.displayAvatarURL())
             .addFields(
                 { name: '💰 Coins', value: userData.coins.toString(), inline: true },
                 { name: '⭐ Level', value: userData.level.toString(), inline: true }
             )
-            .setFooter({ text: 'Use !coins earn to get more coins!' });
+            .setFooter({ text: usingFallback ? '⚠️ Using cached data - database connection issue' : 'Use !coins earn to get more coins!' });
 
         message.reply({ embeds: [embed] });
     },
