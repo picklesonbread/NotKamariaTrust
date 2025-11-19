@@ -1,0 +1,116 @@
+{
+  "673907407298232320": {
+    "pandaName": "picklesonbread's Panda",
+    "color": "classic",
+    "accessories": [],
+    "coins": 134,
+    "level": 1,
+    "experience": 0,
+    "stats": {
+      "friendship": 50,
+      "energy": 100,
+      "happiness": 75,
+      "bamboo_eaten": 0,
+      "games_played": 0,
+      "days_active": 1
+    },
+    "lastDaily": null,
+    "joinDate": "2025-10-20T11:19:29.964Z",
+    "fishCaught": {
+      "Pond Perch": 1
+    },
+    "stamps": {
+      "collection": {
+        "Bonez's Customer": 2,
+        "Beach Bum": 2,
+        "Jungle Adventurer": 1,
+        "Quest Hero": 1
+      },
+      "searches": 6
+    },
+    "timetravel": {
+      "trips": 2,
+      "artifacts": [
+        "Makeshift Shelter",
+        "Rebuilt Disco Ball"
+      ]
+    },
+    "inventory": {
+      "Makeshift Shelter": 1,
+      "Alpha Panda Energy Drink": 1,
+      "Rebuilt Disco Ball": 1
+    },
+    "friendships": {
+      "217713460761460736": 5,
+      "398923294348410901": 30,
+      "223806390450257922": 15
+    },
+    "blackmarket": {
+      "purchases": 0,
+      "busted": 1
+    }
+  },
+  "217713460761460736": {
+    "coins": 50,
+    "friendships": {
+      "673907407298232320": 5
+    }
+  },
+  "398923294348410901": {
+    "pandaName": "j_ujube's Panda",
+    "color": "classic",
+    "accessories": [],
+    "coins": 115,
+    "level": 1,
+    "experience": 0,
+    "stats": {
+      "friendship": 50,
+      "energy": 100,
+      "happiness": 75,
+      "bamboo_eaten": 0,
+      "games_played": 0,
+      "days_active": 1
+    },
+    "joinDate": "2025-10-20T19:21:39.329Z",
+    "friendships": {
+      "673907407298232320": 30
+    },
+    "stamps": {
+      "collection": {
+        "Disco Legend": 1
+      },
+      "searches": 1
+    }
+  },
+  "223806390450257922": {
+    "panda": {
+      "name": "justdamian_98's Panda",
+      "color": "Black & White",
+      "accessories": "None"
+    },
+    "coins": 5,
+    "level": 1,
+    "experience": 0,
+    "stats": {
+      "friendship": 10,
+      "energy": 100,
+      "happiness": 75
+    },
+    "daily": {
+      "lastClaimed": null,
+      "streak": 0
+    },
+    "joinedAt": "2025-10-21T10:26:59.634Z",
+    "blackmarket": {
+      "purchases": 1,
+      "busted": 1
+    },
+    "inventory": {
+      "Alpha Panda Energy Drink": 1,
+      "Bootleg Bamboo": 1
+    },
+    "friendships": {
+      "673907407298232320": 15
+    }
+  }
+}
