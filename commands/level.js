@@ -16,6 +16,8 @@ module.exports = {
                 targetUser = message.mentions.users.first();
             }
 
+            await interaction.deferReply();
+
             let userProfile;
             let usingDatabase = false;
 
