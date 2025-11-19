@@ -1,5 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder, AttachmentBuilder } = require('discord.js');
 
+await interaction.deferReply();
+
 const RECIPES = {
     'apple-caramel-rolls': {
         name: 'Apple and Caramel Rolls',
