@@ -1,8 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 
-await interaction.deferReply();
-
 // Import database utilities  
 const database = require('../utils/database');
 
@@ -45,6 +43,8 @@ module.exports = {
         let storage = (database && database.isInitialized()) ? 'db' : 'json';
         let user;
 
+      await interaction.deferReply();
+      
         // Get user data from database or JSON fallback
         if (storage === 'db') {
             try {
