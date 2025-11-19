@@ -2,8 +2,6 @@ const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, Butt
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
-await interaction.deferReply();
-
 const PANFU_QUESTIONS = [
     // HISTORY QUESTIONS
     {
@@ -529,7 +527,7 @@ module.exports = {
         const userId = interaction.user.id;
         const username = interaction.user.username;
         const category = interaction.options.getString('category') || 'all';
-
+await interaction.deferReply();
         // Check cooldown
         const now = Date.now();
         const cooldownEnd = cooldowns.get(userId);
