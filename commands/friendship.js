@@ -4,8 +4,6 @@ const { loadUserData, saveUserData } = require("../utils/storage");
 // Import database utilities  
 const database = require('../utils/database');
 
-await interaction.deferReply();
-
 // Friendship activities and their effects
 const friendshipActivities = [
     { name: "hangout", description: "spend quality time together", points: 5, cost: 0 },
@@ -81,6 +79,7 @@ module.exports = {
         ),
 
     async execute(message, args, client) {
+        await interaction.deferReply();
         const userId = message.author.id;
         const subcommand = args[0];
         const targetUser = args[1];
