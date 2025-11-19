@@ -6,6 +6,8 @@ module.exports = {
     name: 'inventory',
     description: 'View your complete collection of fish, items, stamps, and artifacts!',
 
+    await interaction.deferReply();
+
     data: new SlashCommandBuilder()
         .setName('inventory')
         .setDescription('View your complete collection of fish, items, stamps, and artifacts!')
