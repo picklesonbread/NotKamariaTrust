@@ -2,6 +2,8 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { loadUserData, saveUserData } = require('../utils/storage');
 const database = require('../utils/database');
 
+await interaction.deferReply();
+
 // Collectible stamps with different rarities
 const stamps = [
     { name: "Volcano Explorer", rarity: "Common", description: "Visited the volcano without getting roasted", emoji: "🌋" },
