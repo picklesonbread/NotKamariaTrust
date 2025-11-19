@@ -6,6 +6,8 @@ module.exports = {
     name: 'bananabet',
     aliases: ['bet', 'coinflip'],
     description: 'Challenge another panda to a coin flip bet!',
+    
+await interaction.deferReply();
 
     data: new SlashCommandBuilder()
         .setName('bananabet')
