@@ -136,6 +136,8 @@ module.exports = {
         const specificLocation = args[0]?.toLowerCase();
         const reporter = weatherPersonalities[Math.floor(Math.random() * weatherPersonalities.length)];
 
+        await interaction.deferReply();
+        
         if (specificLocation) {
             const location = locations.find(loc => 
                 loc.name.toLowerCase().includes(specificLocation)
