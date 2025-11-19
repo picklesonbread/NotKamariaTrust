@@ -4,6 +4,8 @@ const { loadUserData, saveUserData } = require("../utils/storage");
 // Import database utilities  
 const database = require('../utils/database');
 
+await interaction.deferReply();
+
 // Friendship activities and their effects
 const friendshipActivities = [
     { name: "hangout", description: "spend quality time together", points: 5, cost: 0 },
