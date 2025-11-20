@@ -69,8 +69,6 @@ module.exports = {
     async execute(message, args, client) {
         const userId = message.author.id;
         const subcommand = args[0] || 'collection';
-
-        await interaction.deferReply();
         
         const userData = loadUserData();
         if (!userData[userId]) {
