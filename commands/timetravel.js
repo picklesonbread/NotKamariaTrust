@@ -107,8 +107,6 @@ module.exports = {
     async execute(message, args, client) {
         const userId = message.author.id;
         let chosenEra = args[0]?.toLowerCase();
-
-        await interaction.deferReply();
         
         if (!chosenEra || chosenEra === 'random') {
             chosenEra = ['golden', 'drama', 'apocalypse', 'wasteland', 'renaissance'][Math.floor(Math.random() * 5)];
