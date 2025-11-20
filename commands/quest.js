@@ -149,7 +149,6 @@ module.exports = {
         ),
 
     async execute(message, args, client) {
-        await interaction.deferReply();
         const userId = message.author.id;
         const username = message.author.username;
         const subcommand = args[0] || 'status';
