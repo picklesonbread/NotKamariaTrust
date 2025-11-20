@@ -71,7 +71,6 @@ module.exports = {
         ),
 
     async execute(message, args, client) {
-        await interaction.deferReply();
         const channelId = message.channel.id;
         const subcommand = args[0] || 'start';
 
