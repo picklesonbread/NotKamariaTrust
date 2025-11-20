@@ -42,8 +42,6 @@ module.exports = {
         const userId = message.author.id;
         let storage = (database && database.isInitialized()) ? 'db' : 'json';
         let user;
-
-      await interaction.deferReply();
       
         // Get user data from database or JSON fallback
         if (storage === 'db') {
