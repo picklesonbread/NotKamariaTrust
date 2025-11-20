@@ -19,8 +19,6 @@ module.exports = {
                 return message.reply({ embeds: [noPermEmbed] });
             }
 
-            await interaction.deferReply();
-
             if (!database) {
                 const noDBEmbed = new EmbedBuilder()
                     .setColor('#ff0000')
