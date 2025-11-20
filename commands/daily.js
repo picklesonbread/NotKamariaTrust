@@ -12,8 +12,6 @@ module.exports = {
     async execute(message, args, client) {
         const userId = message.author.id;
 
-await interaction.deferReply();
-
         const subcommand = args[0]?.toLowerCase();
 
         switch (subcommand) {
