@@ -97,7 +97,6 @@ module.exports = {
         .setDescription('Uncover wild conspiracy theories about Panfu island'),
 
     async execute(message, args, client) {
-       await interaction.deferReply();
         const theory = conspiracies[Math.floor(Math.random() * conspiracies.length)];
         const investigator = investigators[Math.floor(Math.random() * investigators.length)];
 
