@@ -18,8 +18,6 @@ module.exports = {
             return message.reply({ embeds: [errorEmbed] });
         }
 
-        await interaction.deferReply();
-
         const subcommand = args[0]?.toLowerCase();
 
         switch (subcommand) {
