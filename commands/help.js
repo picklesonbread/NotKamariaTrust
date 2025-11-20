@@ -8,8 +8,6 @@ module.exports = {
     async execute(message, args, client) {
         const subcommand = args[0]?.toLowerCase();
 
-        await interaction.deferReply();
-
         switch (subcommand) {
             case 'panda':
             case 'profile':
