@@ -15,8 +15,6 @@ module.exports = {
         let user;
         let usingDatabase = !!database;
 
-        await interaction.deferReply();
-
         if (usingDatabase) {
             // Use database storage - get or create user profile
             user = await database.getUserProfile(userId, message.author.username);
