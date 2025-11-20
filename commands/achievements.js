@@ -210,7 +210,6 @@ module.exports = {
         ),
 
     async execute(interaction) {
-        await interaction.deferReply();
         const userId = interaction.user.id;
         const username = interaction.user.username;
         const subcommand = interaction.options.getSubcommand();
