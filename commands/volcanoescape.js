@@ -13,7 +13,6 @@ module.exports = {
 
     async execute(message, args, client) {
         const reward = 10; // coins for survivors
-        await interaction.deferReply();
         await message.reply("🌋 **The Panfu Volcano is about to erupt!** React fast to survive…");
 
         // We'll send 3–5 random "JUMP" prompts, each with a very short timer.
