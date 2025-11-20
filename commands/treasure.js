@@ -103,8 +103,6 @@ module.exports = {
         // Pick a random clue
         const { answer, riddle } = clues[Math.floor(Math.random() * clues.length)];
         const reward = Math.floor(Math.random() * 10) + 5; // 5–15 coins
-
-      await interaction.deferReply();
       
         const embed = new EmbedBuilder()
             .setTitle("🏴‍☠️ Panfu Treasure Hunt!")
